@@ -1,26 +1,24 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Description: print value of n satus; zero, positive or negative
- *
- * Return: Always 0 (Success)
+* main - causes an infinite loop
+* Return: 0
 */
 
-void positive_or_negative(int i)
+int main(void)
 {
-	/* my if statement */
-	if (i == 0)
-	{
-		printf("%d is zero\n", i);
-	}
-	else if (i > 0)
-	{
-		printf("%d is positive\n", i);
-	}
-	else
-	{
-		printf("%d is negative\n", i);
-	}
+        int i;
+
+        printf("Infinite loop incoming :(\n");
+
+        i = 0;
+
+        while (i < 10)
+        {
+                putchar(i);
+        }
+
+        printf("Infinite loop avoided! \\o/\n");
+
+        return (0);
 }
